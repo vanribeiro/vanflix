@@ -1,0 +1,187 @@
+{
+  "categorias": [
+    {
+      "titulo": "Artes",
+      "cor": "#eca769",
+      "link_extra": {
+        "text": "Eu já disse que amo artes?"
+      },
+      "videos": [
+        {
+          "titulo": "Técnicas de Aquarela #1: Efeitos e Gambiarras",
+          "url": "https://www.youtube.com/watch?v=0DTK-d_c19I"
+        },
+        {
+          "titulo": "Como usar Aquarela - Para Iniciantes",
+          "url": "https://www.youtube.com/watch?v=xPyhUK1MSKE"
+        },
+        {
+          "titulo": "Como usar Aquarela",
+          "url": "https://www.youtube.com/watch?v=xr_MlezvK4I"
+        },
+        {
+          "titulo": "Mistura de Cores",
+          "url": "https://www.youtube.com/watch?v=uBBJ-wyReEE"
+        },
+        {
+          "titulo": "Resenha e desenho Aquarela Pentel 24 cores",
+          "url": "https://www.youtube.com/watch?v=Ir9E06BStYU"
+        },
+        {
+          "titulo": "Guache, como usar, origem e marcas - Sketch Crás",
+          "url": "https://www.youtube.com/watch?v=2WywLM_yfk0"
+        },
+        {
+          "titulo": "Testando Goauche Reeves",
+          "url": "https://www.youtube.com/watch?v=0wvJPZMLzrw"
+        },
+        {
+          "titulo": "TESTANDO: Faber Castell Super Soft É bom ? | Pontos Positivos e Negativos",
+          "url": "https://www.youtube.com/watch?v=E5MOeXSytQE"
+        }     
+      ]
+    },
+    {
+      "titulo": "Front-End",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": " Como o ReactJS mudou a minha vida | Série ReactJS",
+        "url": "https://www.youtube.com/watch?v=lnN0EprWTsU"
+      },
+      "videos": [
+        {
+          "titulo": "O que é Single Page Application? | Série ReactJS",
+          "url": "https://www.youtube.com/watch?v=lnN0EprWTsU"
+        },
+        {
+          "titulo": "PWA // Dicionário Programador",
+          "url": "https://www.youtube.com/watch?v=jPMFqS9SKWY"
+        },
+        {
+          "titulo": "CSS GRID e FLEXBOX - Quando utilizar?",
+          "url": "https://www.youtube.com/watch?v=0mupCznyGqE"
+        },
+        {
+          "titulo": " LIVE | I WEBINAR DE TECNOLOGIA: Como é trabalhar com desenvolvimento web? - Danilo Vaz",
+          "url": "https://www.youtube.com/watch?v=ZnMVQ7bh0W4&t=192s"
+        },
+        {
+          "titulo": "JS Assíncrono: Entenda de vez Callbacks, Promises e Async/Await",
+          "url": "https://www.youtube.com/watch?v=7Bs4-rqbCQc"
+        },
+        {
+          "titulo": "Lembra Daquela I.A. Que Programava Sozinha? Então...",
+          "url": "https://www.youtube.com/watch?v=Cr89Oz0TWQM"
+        }
+      ]
+    },
+    {
+      "titulo": "Data Science e Inteligência Artificial",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Cursos de Data Science na Alura",
+        "url": "https://www.alura.com.br/formacao-data-science"
+      },
+      "videos": [
+        {
+          "titulo": "Teste de Turing",
+          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+        },
+        {
+          "titulo": "O que é Data Science?",
+          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+        },
+        {
+          "titulo": "Melhor forma de aprender Python",
+          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+        },
+        {
+          "titulo": "Como ingressar no mercado de Data Science?",
+          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+        }
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "orange",
+      "videos": [
+        {
+          "titulo": "Interestellar",
+          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+        },
+        {
+          "titulo": "Gattaca",
+          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+        },
+        {
+          "titulo": "A Chegada",
+          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+        },
+        {
+          "titulo": "Feitiço do Tempo",
+          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+        }
+      ]
+    },
+    {
+      "titulo": "Games",
+      "cor": "red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      },
+      "videos": [
+        {
+          "titulo": "Final Fantasy 7",
+          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+        },
+        {
+          "titulo": "Assassins Creed Valhalla",
+          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+        },
+        {
+          "titulo": "God of War 4",
+          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        },
+        {
+          "titulo": "Resident Evil 8",
+          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+        },
+        {
+          "titulo": "Pokémon Let's Go Pikachu/Eevee",
+          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+        }
+      ]
+    },
+    {
+      "titulo": "Aprendendo a aprender tecnologia",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Curso sobre aprendizado na Alura",
+        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+      },
+      "videos": [
+        {
+          "titulo": "Como estudar melhor?",
+          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+        },
+        {
+          "titulo": "Faculdade",
+          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+        },
+        {
+          "titulo": "Frameworks",
+          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        },
+        {
+          "titulo": "A mágica do Aprendizado",
+          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+        },
+        {
+          "titulo": "Como aprender a programar?",
+          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+        }
+      ]
+    }
+  ]
+}
