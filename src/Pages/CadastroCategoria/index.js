@@ -45,7 +45,7 @@ const CadastroCategoria = () => {
     const initialValues = {
         name: '',
         description: '',
-        color: ''
+        color: '',
     }
     
     const [categories, setCategory] = useState([]);
