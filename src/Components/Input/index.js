@@ -17,5 +17,4 @@ const Input = styled.input`
     padding: 5px
 `;
 
-
 export default Input;

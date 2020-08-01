@@ -1,7 +1,9 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
-import Menu from './../../Components/Menu';
-import Footer from './../../Components/Footer';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import Menu from '../../Components/Menu';
+import Footer from '../../Components/Footer';
 
 const Main = styled.main`
     background-color: var(--black);
@@ -10,16 +12,18 @@ const Main = styled.main`
     padding: 50px 5% 50px 5%;
 `;
 
-const PageDefault = ({children}) => {
-    return(
-        <React.Fragment>
-            <Menu />
-                <Main>
-                    {children}
-                </Main>
-            <Footer />
-        </React.Fragment>
-    );
-}
+const PageDefault = ({ children }) => (
+  <>
+    <Menu />
+    <Main>
+      {children}
+    </Main>
+    <Footer />
+  </>
+);
+
+PageDefault.propTypes = {
+  children: PropTypes.element,
+};
 
 export default PageDefault;
