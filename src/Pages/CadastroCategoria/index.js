@@ -5,6 +5,9 @@ import styled from 'styled-components';
 import PageDefault from '../PageDefault';
 import ButtonAction from '../../Components/ButtonAction';
 import Input from '../../Components/Input';
+import FieldSet from '../../Components/FieldSet';
+import TextArea from '../../Components/TextArea';
+import Label from '../../Components/Label';
 
 const Form = styled.form`
     display: flex;
@@ -17,35 +20,11 @@ const ButtonContainer = styled.div`
     justify-content: right;
 `;
 
-const Fieldset = styled.fieldset`
-    display: flex;
-    flex-direction: column;
-    border: none;
-`;
-
-const TextArea = styled.textarea`
-    resize: none;
-    width: 100%;
-    height: 100px;
-    background-color: #53585D;
-    border: none;
-    color: #E5E5E5;
-    border-radius: 4px;
-    margin-top: 16px;
-    margin-bottom: 40px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.125em;
-    line-height: 21px;
-    padding: 5px;
-`;
-
 const CadastroCategoria = () => {
   const initialValues = {
     name: '',
     description: '',
-    color: '',
+    color: '#ffffff',
   };
 
   const [categories, setCategory] = useState([]);
@@ -78,10 +57,10 @@ const CadastroCategoria = () => {
           {values.name}
         </h1>
         <Form onSubmit={handleSubmit}>
-          <Fieldset>
-            <label htmlFor="category">
+          <FieldSet>
+            <Label htmlFor="category">
               Nome da Categoria:
-            </label>
+            </Label>
             <Input
               type="text"
               value={values.name}
@@ -90,32 +69,32 @@ const CadastroCategoria = () => {
               id="category"
               placeholder="Categoria"
             />
-          </Fieldset>
-          <Fieldset>
-            <label htmlFor="description">
+          </FieldSet>
+          <FieldSet>
+            <Label htmlFor="description">
               Descrição:
-            </label>
+            </Label>
             <TextArea
-              type="text"
               value={values.description}
               name="description"
               onChange={handlerChange}
               id="description"
               placeholder="Descrição"
             />
-          </Fieldset>
-          <Fieldset>
-            <label htmlFor="color-category">
+          </FieldSet>
+          <FieldSet>
+            <Label htmlFor="color-category">
               Cor:
-            </label>
+            </Label>
             <Input
               type="color"
               value={values.color}
               name="color"
               onChange={handlerChange}
               id="color-category"
+              inputcolor
             />
-          </Fieldset>
+          </FieldSet>
           <ButtonContainer>
             <ButtonAction>
               Cadastrar

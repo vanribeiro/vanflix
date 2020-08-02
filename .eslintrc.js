@@ -24,5 +24,9 @@ module.exports = {
   rules: {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "linebreak-style": 0,
+    "react/self-closing-comp": ["error", {
+      "component": true,
+      "html": false,
+    }],
   },
 };

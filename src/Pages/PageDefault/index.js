@@ -22,8 +22,12 @@ const PageDefault = ({ children }) => (
   </>
 );
 
+PageDefault.defaultProps = {
+  children: '',
+};
+
 PageDefault.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.node,
 };
 
 export default PageDefault;
