@@ -47,7 +47,9 @@ const CadastroCategoria = () => {
   };
 
   useEffect(() => {
-    const URL = 'http://localhost:8080/categorias';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://vanflix.herokuapp.com/categorias';
     fetch(URL)
       .then(async (serverAnswer) => {
         const awswer = await serverAnswer.json();
