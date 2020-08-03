@@ -1,13 +1,10 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import PageDefault from '../PageDefault';
 import ButtonAction from '../../Components/ButtonAction';
-import Input from '../../Components/Input';
-import FieldSet from '../../Components/FieldSet';
-import TextArea from '../../Components/TextArea';
-import Label from '../../Components/Label';
+import FormFieldWrapper from '../../Components/FormFieldWrapper';
 
 const Form = styled.form`
     display: flex;
@@ -49,58 +46,101 @@ const CadastroCategoria = () => {
     setValues(initialValues);
   };
 
+  useEffect(() => {
+    const URL = 'http://localhost:8080/categorias';
+    fetch(URL)
+      .then(async (serverAnswer) => {
+        const awswer = await serverAnswer.json();
+        setCategory([
+          ...awswer,
+        ]);
+      });
+
+    // setTimeout(() => {
+    //   setCategory([
+    //     ...categories,
+    //     {
+    //       id: 1,
+    //       name: 'Front-End',
+    //       description: 'A mistura de arte e técnica que tanto amamos! ❤️💙💛',
+    //       color: '#eca769',
+    //     },
+    //     {
+    //       id: 2,
+    //       name: 'Arte',
+    //       description: 'Técnicas de Arte!',
+    //       color: '#eca769',
+    //     },
+    //     {
+    //       id: 3,
+    //       name: 'Comédia',
+    //       description: 'Rir é Importante!',
+    //       color: '#eca769',
+    //     },
+    //     {
+    //       id: 4,
+    //       name: 'Séries',
+    //       description: 'Trailer e Curiosidades',
+    //       color: '#eca769',
+    //     },
+    //     {
+    //       id: 5,
+    //       name: 'Filmes',
+    //       description: 'Trailers de Filmes',
+    //       color: '#eca769',
+    //     },
+    //   ]);
+    // }, 4 * 1000);
+  }, []);
+
   return (
     <>
       <PageDefault>
         <h1>
           Cadastro de Categoria:
-          {values.name}
+          {` ${values.name}`}
         </h1>
         <Form onSubmit={handleSubmit}>
-          <FieldSet>
-            <Label htmlFor="category">
-              Nome da Categoria:
-            </Label>
-            <Input
-              type="text"
-              value={values.name}
-              name="name"
-              onChange={handlerChange}
-              id="category"
-              placeholder="Categoria"
-            />
-          </FieldSet>
-          <FieldSet>
-            <Label htmlFor="description">
-              Descrição:
-            </Label>
-            <TextArea
-              value={values.description}
-              name="description"
-              onChange={handlerChange}
-              id="description"
-              placeholder="Descrição"
-            />
-          </FieldSet>
-          <FieldSet>
-            <Label htmlFor="color-category">
-              Cor:
-            </Label>
-            <Input
-              type="color"
-              value={values.color}
-              name="color"
-              onChange={handlerChange}
-              id="color-category"
-              inputcolor
-            />
-          </FieldSet>
+
+          <FormFieldWrapper
+            label="Nome da Categoria"
+            type="text"
+            value={values.name}
+            name="name"
+            onChange={handlerChange}
+            id="category"
+          />
+
+          <FormFieldWrapper
+            type="textarea"
+            label="Descrição"
+            value={values.description}
+            name="description"
+            onChange={handlerChange}
+            id="description"
+          />
+
+          <FormFieldWrapper
+            label="Cor"
+            type="color"
+            value={values.color}
+            name="color"
+            onChange={handlerChange}
+            id="color-category"
+            inputcolor
+          />
+
           <ButtonContainer>
             <ButtonAction>
               Cadastrar
             </ButtonAction>
           </ButtonContainer>
         </Form>
+        {categories.length === 0 && (
+          <div>
+            Carregando...
+          </div>
+        )}
         <ul>
           {categories.map((categoria, indice) => (
             // eslint-disable-next-line react/no-array-index-key

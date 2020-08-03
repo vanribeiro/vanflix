@@ -1,0 +1,34 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "name": "Front-End",
+      "description": "A mistura de arte e técnica que tanto amamos! ❤️💙💛",
+      "color": "#eca769"
+    },
+    {
+      "id": 2,
+      "name": "Arte",
+      "description": "Técnicas de Arte!",
+      "color": "#eca769"
+    },
+    {
+      "id": 3,
+      "name": "Comédia",
+      "description": "Rir é Importante!",
+      "color": "#eca769"
+    },
+    {
+      "id": 4,
+      "name": "Séries",
+      "description": "Trailer e Curiosidades",
+      "color": "#eca769"
+    },
+    {
+      "id": 5,
+      "name": "Filmes",
+      "description": "Trailers de Filmes",
+      "color": "#eca769"
+    }
+  ]
+}
