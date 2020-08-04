@@ -5,6 +5,8 @@ import styled from 'styled-components';
 import PageDefault from '../PageDefault';
 import ButtonAction from '../../Components/ButtonAction';
 import FormFieldWrapper from '../../Components/FormFieldWrapper';
+import useForm from '../../Hooks/useform';
+import URL_BACKEND from '../../Config';
 
 const Form = styled.form`
     display: flex;
@@ -24,75 +26,26 @@ const CadastroCategoria = () => {
     color: '#ffffff',
   };
 
+  const { clearForm, values, handlerChange } = useForm(initialValues);
+
   const [categories, setCategory] = useState([]);
-  const [values, setValues] = useState(initialValues);
-
-  const setValue = (key, value) => {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  };
-
-  const handlerChange = (event) => {
-    setValue(event.target.getAttribute('name'), event.target.value);
-  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setCategory([
       ...categories, values,
     ]);
-    setValues(initialValues);
+    clearForm();
   };
 
   useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
-      : 'https://vanflix.herokuapp.com/categorias';
-    fetch(URL)
+    fetch(URL_BACKEND)
       .then(async (serverAnswer) => {
         const awswer = await serverAnswer.json();
         setCategory([
           ...awswer,
         ]);
       });
-
-    // setTimeout(() => {
-    //   setCategory([
-    //     ...categories,
-    //     {
-    //       id: 1,
-    //       name: 'Front-End',
-    //       description: 'A mistura de arte e técnica que tanto amamos! ❤️💙💛',
-    //       color: '#eca769',
-    //     },
-    //     {
-    //       id: 2,
-    //       name: 'Arte',
-    //       description: 'Técnicas de Arte!',
-    //       color: '#eca769',
-    //     },
-    //     {
-    //       id: 3,
-    //       name: 'Comédia',
-    //       description: 'Rir é Importante!',
-    //       color: '#eca769',
-    //     },
-    //     {
-    //       id: 4,
-    //       name: 'Séries',
-    //       description: 'Trailer e Curiosidades',
-    //       color: '#eca769',
-    //     },
-    //     {
-    //       id: 5,
-    //       name: 'Filmes',
-    //       description: 'Trailers de Filmes',
-    //       color: '#eca769',
-    //     },
-    //   ]);
-    // }, 4 * 1000);
   }, []);
 
   return (
@@ -105,7 +58,7 @@ const CadastroCategoria = () => {
         <Form onSubmit={handleSubmit}>
 
           <FormFieldWrapper
-            label="Nome da Categoria"
+            label="Título"
             type="text"
             value={values.name}
             name="name"
@@ -147,7 +100,7 @@ const CadastroCategoria = () => {
           {categories.map((categoria, indice) => (
             // eslint-disable-next-line react/no-array-index-key
             <li key={`${categoria}${indice}`}>
-              {categoria.name}
+              {categoria.title}
             </li>
           ))}
         </ul>
