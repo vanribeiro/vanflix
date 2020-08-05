@@ -67,13 +67,11 @@ const Input = styled.input`
       transform: scale(.6) translateY(-10px);
     }
 
-  ${({ hasValue }) => {
-    return hasValue && css`
+  ${({ hasValue }) => hasValue && css`
       &:not([type='color']) + span {
         transform: scale(.6) translateY(-10px);
       }
-    `;
-  }}
+    `}
 `;
 
 const FormField = ({

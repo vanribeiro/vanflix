@@ -1,4 +1,3 @@
-// import React from 'react';
 import configs from '../Config';
 
 const URL_CATEGORIES = `${configs.URL_BACKEND}/categories`;

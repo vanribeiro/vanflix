@@ -16,7 +16,7 @@ const Form = styled.form`
 
 const ButtonContainer = styled.div`
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 `;
 
 const CadastroCategoria = () => {
@@ -86,7 +86,7 @@ const CadastroCategoria = () => {
           />
 
           <ButtonContainer>
-            <ButtonAction>
+            <ButtonAction type="submit">
               Cadastrar
             </ButtonAction>
           </ButtonContainer>

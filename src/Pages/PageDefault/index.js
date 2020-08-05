@@ -1,6 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import Menu from '../../Components/Menu';
 import Footer from '../../Components/Footer';
@@ -9,13 +9,21 @@ const Main = styled.main`
     background-color: var(--black);
     color: var(--white);
     flex: 1;
-    padding: 50px 5% 50px 5%;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    
+
+    ${({ paddingAll }) => css`
+      padding: ${paddingAll};
+    `}
 `;
 
-const PageDefault = ({ children }) => (
+const PageDefault = ({ children, paddingAll }) => (
   <>
     <Menu />
-    <Main>
+    <Main paddingAll={paddingAll}>
       {children}
     </Main>
     <Footer />
@@ -24,10 +32,12 @@ const PageDefault = ({ children }) => (
 
 PageDefault.defaultProps = {
   children: '',
+  paddingAll: '',
 };
 
 PageDefault.propTypes = {
   children: PropTypes.node,
+  paddingAll: PropTypes.number,
 };
 
 export default PageDefault;
