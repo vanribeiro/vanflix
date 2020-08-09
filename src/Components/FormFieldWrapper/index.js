@@ -75,16 +75,21 @@ const Input = styled.input`
 `;
 
 const FormField = ({
-  type, id, name, value, onChange, inputcolor, label,
+  type, id, name, value, onChange, inputcolor, label, suggestions,
 }) => {
+  const fieldId = `id_${name}`;
   const isTypeTextArea = type === 'textarea';
   const tag = isTypeTextArea ? 'textarea' : 'input';
+
   const hasValue = Boolean(value.length);
+  const hasSuggestion = Boolean(suggestions.length);
 
   return (
     <>
       <FormFieldWrapper>
-        <Label>
+        <Label
+          htmlFor={fieldId}
+        >
           <Input
             as={tag}
             hasValue={hasValue}
@@ -94,11 +99,26 @@ const FormField = ({
             name={name}
             onChange={onChange}
             inputcolor={inputcolor}
+            autoComplete={hasSuggestion ? 'off' : 'on'}
+            list={hasSuggestion ? `suggestionFor_${fieldId}` : 'on'}
           />
           <Label.Text>
             {label}
             :
           </Label.Text>
+          {
+            hasSuggestion && (
+              <datalist id={`suggestionFor_${fieldId}`}>
+                {
+                  suggestions.map((suggestion) => (
+                    <option value={suggestion} key={`suggestionFor_${fieldId}_option${suggestion}`}>
+                      {suggestion}
+                    </option>
+                  ))
+                }
+              </datalist>
+            )
+          }
         </Label>
       </FormFieldWrapper>
     </>
@@ -108,6 +128,8 @@ const FormField = ({
 FormField.defaultProps = {
   type: 'text',
   value: '',
+  onChange: () => {},
+  suggestions: [],
 };
 
 FormField.propTypes = {
@@ -116,9 +138,10 @@ FormField.propTypes = {
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   value: PropTypes.string,
-  onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
   // eslint-disable-next-line react/require-default-props
   inputcolor: PropTypes.bool,
+  suggestions: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default FormField;

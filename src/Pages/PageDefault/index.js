@@ -13,8 +13,6 @@ const Main = styled.main`
     padding-left: 5%;
     padding-right: 5%;
     
-    
-
     ${({ paddingAll }) => css`
       padding: ${paddingAll};
     `}
@@ -37,7 +35,7 @@ PageDefault.defaultProps = {
 
 PageDefault.propTypes = {
   children: PropTypes.node,
-  paddingAll: PropTypes.number,
+  paddingAll: PropTypes.string,
 };
 
 export default PageDefault;

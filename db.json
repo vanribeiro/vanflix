@@ -2,214 +2,143 @@
   "categories": [
     {
       "id": 1,
-      "title": "Front End",
-      "color": "#6BD1FF",
+      "title": "Arte",
+      "color": "#ECA769",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Técnicas de Arte"
       }
     },
     {
       "id": 2,
-      "title": "Back End",
-      "color": "#00C86F",
+      "title": "Front-End",
+      "color": "#6BD1FF",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Arte e Código"
       }
     },
     {
       "id": 3,
-      "title": "Data Science e Inteligência Artificial",
-      "color": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/cursos-online-mobile"
-      }
-    },
-    {
-      "id": 4,
       "title": "Filmes",
-      "color": "orange"
-    },
-    {
-      "id": 5,
-      "title": "Games",
-      "color": "red",
+      "color": "#800080",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Meus filmes favoritos..."
       }
     }
   ],
   "videos": [
     {
       "id": 1,
-      "categoryId": 1,
-      "title": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "categoryId": 2,
+      "title": "O que é Single Page Application? | Série ReactJS",
+      "url": "https://www.youtube.com/watch?v=lnN0EprWTsU"
     },
     {
       "id": 2,
-      "categoryId": 1,
-      "title": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+      "categoryId": 2,
+      "title": "PWA // Dicionário Programador",
+      "url": "https://www.youtube.com/watch?v=jPMFqS9SKWY"
     },
     {
       "id": 3,
-      "categoryId": 1,
-      "title": "Componentização com VanillaJS #AluraMais",
-      "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+      "categoryId": 2,
+      "title": "CSS GRID e FLEXBOX - Quando utilizar?",
+      "url": "https://www.youtube.com/watch?v=0mupCznyGqE"
     },
     {
       "id": 4,
-      "categoryId": 1,
-      "title": "Pare de chutar e aprenda a display: inline #01",
-      "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
-    },
-    {
-      "id": 5,
-      "categoryId": 1,
-      "title": "Template String: Interpolando strings com JavaScript #AluraMais",
-      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+      "categoryId": 2,
+      "title": " LIVE | I WEBINAR DE TECNOLOGIA: Como é trabalhar com desenvolvimento web? - Danilo Vaz",
+      "url": "https://www.youtube.com/watch?v=ZnMVQ7bh0W4&t=192s"
     },
     {
       "id": 6,
-      "categoryId": 1,
-      "title": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+      "categoryId": 2,
+      "title": "JS Assíncrono: Entenda de vez Callbacks, Promises e Async/Await",
+      "url": "https://www.youtube.com/watch?v=7Bs4-rqbCQc"
     },
     {
       "id": 7,
-      "categoryId": 1,
-      "title": "Novidades do Angular v9",
-      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+      "categoryId": 2,
+      "title": "Lembra Daquela I.A. Que Programava Sozinha? Então...",
+      "url": "https://www.youtube.com/watch?v=Cr89Oz0TWQM"
     },
     {
       "id": 8,
-      "categoryId": 2,
-      "title": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-      "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
-    },
-    {
-      "id": 9,
-      "categoryId": 2,
-      "title": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-      "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
-    },
-    {
-      "id": 10,
-      "categoryId": 2,
-      "title": "Programei 4 robôs que criam vídeos para mim no YouTube",
-      "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
-    },
-    {
-      "id": 11,
-      "categoryId": 2,
-      "title": "API: Dicionário do Programador",
-      "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-    },
-    {
-      "id": 12,
-      "categoryId": 2,
-      "title": "Usando Git Direito",
-      "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
-    },
-    {
-      "id": 13,
-      "categoryId": 3,
-      "title": "Teste de Turing",
-      "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
-    },
-    {
-      "id": 14,
-      "categoryId": 3,
-      "title": "O que é Data Science?",
-      "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
-    },
-    {
-      "id": 15,
-      "categoryId": 3,
-      "title": "Melhor forma de aprender Python",
-      "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
-    },
-    {
-      "id": 16,
-      "categoryId": 3,
-      "title": "Como ingressar no mercado de Data Science?",
-      "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
-    },
-    {
-      "id": 17,
-      "categoryId": 4,
-      "title": "Interestellar",
-      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
-    },
-    {
-      "id": 18,
-      "categoryId": 4,
-      "title": "Gattaca",
-      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
-    },
-    {
-      "id": 19,
-      "categoryId": 4,
-      "title": "A Chegada",
-      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
-    },
-    {
-      "id": 20,
-      "categoryId": 4,
-      "title": "Feitiço do Tempo",
-      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
-    },
-    {
-      "id": 21,
-      "categoryId": 5,
-      "title": "Final Fantasy 7",
-      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
-    },
-    {
-      "id": 22,
-      "categoryId": 5,
-      "title": "Assassins Creed Valhalla",
-      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
-    },
-    {
-      "id": 23,
-      "categoryId": 5,
-      "title": "God of War 4",
-      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
-    },
-    {
-      "id": 24,
-      "categoryId": 5,
-      "title": "Resident Evil 8",
-      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-    },
-    {
-      "title": "Vídeo Padrão",
-      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw",
-      "category": 1,
-      "id": 25
-    },
-    {
-      "title": "Vídeo Padrão",
-      "url": "https://youtu.be/hhQ3RtvmfEg",
-      "category": 1,
-      "id": 26
-    },
-    {
-      "title": "Vídeo Padrão",
-      "url": "https://youtu.be/hhQ3RtvmfEg",
-      "category": 1,
-      "id": 27
-    },
-    {
-      "title": "Vídeo Padrão",
-      "url": "https://youtu.be/hhQ3RtvmfEg",
       "categoryId": 1,
-      "id": 28
+      "title": "Técnicas de Aquarela #1: Efeitos e Gambiarras",
+      "url": "https://www.youtube.com/watch?v=0DTK-d_c19I"
+    },
+    {
+      "title": "Como usar Aquarela - Para Iniciantes",
+      "url": "https://www.youtube.com/watch?v=xPyhUK1MSKE",
+      "categoryId": 1,
+      "id": 9
+    },
+    {
+      "title": "Como usar Aquarela",
+      "url": "https://www.youtube.com/watch?v=xr_MlezvK4I",
+      "categoryId": 1,
+      "id": 10
+    },
+    {
+      "title": "Mistura de Cores",
+      "url": "https://www.youtube.com/watch?v=uBBJ-wyReEE",
+      "categoryId": 1,
+      "id": 11
+    },
+    {
+      "title": "Resenha e desenho Aquarela Pentel 24 cores",
+      "url": "https://www.youtube.com/watch?v=Ir9E06BStYU",
+      "categoryId": 1,
+      "id": 12
+    },
+    {
+      "title": "Guache, como usar, origem e marcas - Sketch Crás",
+      "url": "https://www.youtube.com/watch?v=2WywLM_yfk0",
+      "categoryId": 1,
+      "id": 13
+    },
+    {
+      "title": "Testando Goauche Reeves",
+      "url": "https://www.youtube.com/watch?v=0wvJPZMLzrw",
+      "categoryId": 1,
+      "id": 14
+    },
+    {
+      "title": "Perdido em Marte",
+      "url": "https://www.youtube.com/watch?v=tCAgtzMUCaA",
+      "categoryId": 3,
+      "id": 15
+    },
+    {
+      "title": "Jogo da Imitação",
+      "url": "https://www.youtube.com/watch?v=YIkKbMcJL_4",
+      "categoryId": 3,
+      "id": 16
+    },
+    {
+      "title": "Sin Filtro",
+      "url": "https://www.youtube.com/watch?v=vMgEdE0DAro",
+      "categoryId": 3,
+      "id": 17
+    },
+    {
+      "title": "Avengers: Age of Ultron",
+      "url": "https://www.youtube.com/watch?v=tmeOjFno6Do",
+      "categoryId": 3,
+      "id": 19
+    },
+    {
+      "title": "Um Senhor Estagiário",
+      "url": "https://www.youtube.com/watch?v=jHG8TaEBhKI",
+      "categoryId": 3,
+      "id": 20
+    },
+    {
+      "title": "Despedida em Grande Estilo",
+      "url": "https://www.youtube.com/watch?v=yLI7M-LZJS8",
+      "categoryId": 3,
+      "id": 21
     }
   ]
 }

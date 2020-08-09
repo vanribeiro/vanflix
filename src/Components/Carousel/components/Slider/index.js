@@ -6,6 +6,7 @@ import styled from 'styled-components';
 const Container = styled.ul`
   padding: 0;
   margin: 0;
+
   .slick-prev,
   .slick-next {
     z-index: 50;
@@ -26,6 +27,11 @@ const Container = styled.ul`
   .slick-next {
     right: 16px;
   }
+
+  &:hover{
+    height: 500px;
+  }
+
 `;
 
 export const SliderItem = styled.li`
@@ -36,6 +42,8 @@ export const SliderItem = styled.li`
     height: 197px;
     object-fit: cover;
   }
+
+
 `;
 
 
